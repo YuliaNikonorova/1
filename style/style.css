@@ -1,0 +1,59 @@
+.header >h1
+{
+    color: white;
+    background: #3c3c3c;
+}
+.header >h3
+{
+    color: #e9b637;
+}
+.header >p
+{
+    color: white;
+}
+.header
+{
+    background: #3c3c3c;
+}
+.products_one > p
+{
+    border: 5px solid orange;
+    border-radius:50%;
+    height: 150px;
+    width: 150px;
+}
+.products_two > p
+{
+    border: 5px solid orange;
+    border-radius:50%;
+    height: 150px;
+    width: 150px;
+}
+.products_three > p
+{
+    border: 5px solid orange;
+    border-radius:50%;
+    height: 150px;
+    width: 150px;
+}
+.products_four > p
+{
+    border: 5px solid orange;
+    border-radius:50%;
+    height: 150px;
+    width: 150px;
+}
+.products_five > p
+{
+    border: 5px solid orange;
+    border-radius:50%;
+    height: 150px;
+    width: 150px;
+}
+.products_six > p
+{
+    border: 5px solid orange;
+    border-radius:50%;
+    height: 150px;
+    width: 150px;
+}
