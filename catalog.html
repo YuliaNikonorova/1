@@ -2,19 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="srylesheet" type="text/css">
-    <title>Title</title>
+    <link href="style/catalog_style.css" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+   <title>Каталог</title>
 </head>
 <body>
-<div class="header">
-
-</div>
+	<div class="header">
+		<h1>MAGNO</h1>
+		<a href="#" id="phone"><i class="fa fa-phone"></i>+ 7 900 000 00 00</a>
+		<input type="search" placeholder="Поиск"><i class="fa fa-search"></i>
+		<a href="#"><i class="fa fa-user"></i>Авторизация</a>
+		<a href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
+	</div>
     <div class="categories">
-
+		<ul class="categories_menu"> 
+			<li><a href="#">ВСЕ КАТЕГОРИИ +</a>	</li>
+			<li><a href="#" class="shipping">Доставка</a></li>
+			<li><a href="#" class="guarantee">Гарантия</a></li>
+			<li><a href="#" class="contacts">Контакты</a></li>
+		</ul>
     </div>
-            <div class="filters">
-
+	<div class="way">
+		<ul>
+			<li><a href="#">Главная</a><a href="#">/Каталог</a><a href="#">/Моноблоки и ноутбуки</a></li>
+		</ul>
+	</div>
+	<div class="line"></div>
+	<div class="info"><p><b>Моноблоки и ноутбуки</b></p></div>
+        <div class="filters">
+		<h2>ФИЛЬТР</h2>
+			<form>
+			<fieldset>
+						
+						<p>Стоимость</p>
+						
+				<p><input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5</span></p>
+				</fieldset>
+				<fieldset>
+				<p>Призводительность</p>
+					<input type="checkbox" checked/>Lenovo 
+					<input type="checkbox" checked/> Philips
+					<br>
+					<input type="checkbox" checked/> Acer
+					<input type="checkbox"/>HP
+				</fieldset>
+				<fieldset>
+				<p>Видеокарта</p>
+					<input type="radio" name="group1" value="Milk"> NVidia<br>
+					<input type="radio" name="group1" value="Butter" checked> AMD<br>
+					<input type="radio" name="group1" value="Cheese"> Встроенная
+				</fieldset>
+				<fieldset>
+				
+				</fieldset>
+			</form>
             </div>
+			
      <div class="home">
 
      </div>
@@ -26,3 +69,14 @@
 </div>
 </body>
 </html>
+
+<!--
+<ul class="submenu">
+					<li><a href="#">Роутеры</a></li>
+					<li><a href="#">Игровые симуляторы</a></li>
+					<li><a href="#">Комплектующие</a></li>
+					<li><a href="#">Переферия</a></li>
+					<li><a href="#">Настольные лампы</a></li>
+					<li><a href="#">Моноблоки</a></li>
+				</ul>
+				-->
