@@ -14,47 +14,66 @@
 		<a href="#"><i class="fa fa-user"></i>Авторизация</a>
 		<a href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
 	</div>
+	
     <div class="categories">
-		<ul class="categories_menu"> 
-			<li><a href="#">ВСЕ КАТЕГОРИИ +</a>	</li>
+			<ul class="categories_menu"> 
+					<ul class="menu">
+						<li><a href="#">ВСЕ КАТЕГОРИИ +</a>
+							<ul class="submenu">
+								<li><a href=#>Подменю 1</a></li>
+								<li><a href=#>Подменю 2</a></li>
+								<li><a href=#>Подменю 3</a></li>
+							</ul>
+					</li>
+					</ul>
 			<li><a href="#" class="shipping">Доставка</a></li>
 			<li><a href="#" class="guarantee">Гарантия</a></li>
 			<li><a href="#" class="contacts">Контакты</a></li>
 		</ul>
     </div>
+	
 	<div class="way">
 		<ul>
 			<li><a href="#">Главная</a><a href="#">/Каталог</a><a href="#">/Моноблоки и ноутбуки</a></li>
 		</ul>
 	</div>
+	
 	<div class="line"></div>
+	
 	<div class="info"><p><b>Моноблоки и ноутбуки</b></p></div>
         <div class="filters">
-		<h2>ФИЛЬТР</h2>
-			<form>
+		
 			<fieldset>
-						
-						<p>Стоимость</p>
-						
+				<h2>ФИЛЬТР</h2>	
+			</fieldset>
+		
+			
+			
+			<form>
+			
+			<fieldset>	
+						<h3>Стоимость</h3>						
 				<p><input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5</span></p>
+			</fieldset>
+				<fieldset>
+						<h3>Призводительность</h3>
+				<input type="checkbox" checked/>Lenovo 
+				<input type="checkbox" checked/> Philips
+			<br>
+				<input type="checkbox" checked/> Acer
+				<input type="checkbox"/>HP
 				</fieldset>
 				<fieldset>
-				<p>Призводительность</p>
-					<input type="checkbox" checked/>Lenovo 
-					<input type="checkbox" checked/> Philips
-					<br>
-					<input type="checkbox" checked/> Acer
-					<input type="checkbox"/>HP
+						<h3>Видеокарта</h3>
+				<input type="radio" name="group1" value="Milk"> NVidia<br>
+				<input type="radio" name="group1" value="Butter" checked> AMD<br>
+				<input type="radio" name="group1" value="Cheese"> Встроенная
 				</fieldset>
 				<fieldset>
-				<p>Видеокарта</p>
-					<input type="radio" name="group1" value="Milk"> NVidia<br>
-					<input type="radio" name="group1" value="Butter" checked> AMD<br>
-					<input type="radio" name="group1" value="Cheese"> Встроенная
+					<button>Приенить</button>
+					<p>Сбросить фильтр</p>
 				</fieldset>
-				<fieldset>
-				
-				</fieldset>
+							
 			</form>
             </div>
 			
@@ -69,14 +88,3 @@
 </div>
 </body>
 </html>
-
-<!--
-<ul class="submenu">
-					<li><a href="#">Роутеры</a></li>
-					<li><a href="#">Игровые симуляторы</a></li>
-					<li><a href="#">Комплектующие</a></li>
-					<li><a href="#">Переферия</a></li>
-					<li><a href="#">Настольные лампы</a></li>
-					<li><a href="#">Моноблоки</a></li>
-				</ul>
-				-->
