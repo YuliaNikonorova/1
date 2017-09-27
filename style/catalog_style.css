@@ -1,13 +1,30 @@
 *{
 	box-sizing:border-box;
 }
+a{
+	text-decoration: none;
+}
 ul{
 	list-style:none;
 }
 body{
 	margin:0;
 	padding:0;
+	overflow-x:hidden;
 }
+button
+{
+	border:none;
+	width:252px;
+	height:32px;
+	background:#e9b637;	
+}
+button:hover
+{
+	background:none;
+	
+}
+/*Верх*/
 .header{
 	display:flex;
 	justify-content:space-around;
@@ -86,7 +103,7 @@ ul.submenu > li > a:hover {
 ul.menu > li:hover > ul.submenu {
     display: block;
 }
-/* Выпадающее меню конец*/
+
 
 .categories{
 	background:#f0f0f0;
@@ -99,19 +116,112 @@ ul.menu > li:hover > ul.submenu {
 .categories_menu li:first-child{
 	width:50%;
 }
+/* Выпадающее меню конец*/
+/*Линия с ссылками*/
 .way{
 	display:flex;
 	margin-left: 4.5%;	
 }
+/*Горизонтальная полоса*/
 .line{
 	border-bottom: 2px solid #f0f0f0;
 	height: 1px;
 	width: 100%;
 }
+/*Название отдела*/
 .info{
 	font-family: Century Gothic Bold;
 	font-size: 30px;
 	margin-left: 6%;
+}
+/*Новый код*/
+.new{
+	width: 1200px;
+	margin:0 auto;
+	display: flex;
+	justify-content:space-around;
+}
+h2{
+	background: grey;
+	padding: 10px;
+	margin-bottom: 0;
+}
+.filters form{
+	margin-top: 0;
+}
+.test::before{			
+	content: "";
+	background-image: linear-gradient(#f0f0f0 8%, #fff 4%, #fff 100%) ;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}	
+.test{
+	position: relative;
+}
+.filters
+{
+	display:flex;
+	
+}
+/*Ноутбуки*/
+.catalog
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	width:800px;
+	
+}
+.home
+{
+	border:1px solid #333;
+	margin:20px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-around;
+	height:350px;
+	width:360px;
+	position:relative;
+}
+.home span
+{
+	background:#709f39;
+	color:#fff;
+	padding:10px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+/*Конец нового кода*/
+/*Сортировка*/
+/*
+.sorting{	
+	background: #f0f0f0;
+}
+.sorting_menu{
+	display:flex;
+	justify-content:flex-end;
+	align-items: center;
+}
+.sorting_menu li{
+	padding-left: 80px;
+}
+.sorting_menu_arrow{
+	margin-right: 120px;
+}
+*/
+/*Боковой фильтр*/
+/*
+.menu_sorting{
+	
+}
+.submenu_sorting{
+	
 }
 .filters fieldset{
 	background: #606060;
@@ -120,6 +230,64 @@ ul.menu > li:hover > ul.submenu {
 	border-right: 0px;
 	border:	solid 1px #3c3c3c;
 	width: 360px;
-	margin-left: 80px;
+	margin-left: 80px;	
+}
+*/
+/*------------------------------------------------------*/
+				/*На все страницы внизу*/
+/*------------------------------------------------------*/
+/*Контактная информация*/
+.contact_info a:visited{
+	color: white;
+}
+.contact_info{
+	background: #464646;
+	color: white;
+}
+.contact_info>h1{
+	font-size: 50px;	
+}
+.contact_link {
+	font-size: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items:flex-end;		
+}
+.contact_map h3{
+	font-size: 14px;	
+}
+.contact_map li{
+	font-size: 26px;
+}
+.contact_map{
+	display: flex;
+	justify-content: space-around;		
 	
+	margin-left:2%;	
+	width:100%;	
+}
+.contact_link_info{
+	display: flex;
+	justify-content: space-around;	
+	margin-left:7%;	
+	width:20%;	
+}
+/*Низ страницы*/
+.bottom{
+	background: #3c3c3c;
+	color: #838383;
+	display: flex;	
+}
+.bottom p{
+	margin-left:10%;
+	width:20%;	
+}
+.bottom>li{
+	color: #white;
+}
+.buttom_icon{
+	display: flex;
+	justify-content: space-around;	
+	margin-left:60%;
+	width:20%;
 }

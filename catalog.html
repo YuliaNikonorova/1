@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	
     <link href="style/catalog_style.css" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+   
    <title>Каталог</title>
 </head>
 <body>
+<!--Верх-->
 	<div class="header">
 		<h1>MAGNO</h1>
 		<a href="#" id="phone"><i class="fa fa-phone"></i>+ 7 900 000 00 00</a>
@@ -14,77 +17,242 @@
 		<a href="#"><i class="fa fa-user"></i>Авторизация</a>
 		<a href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
 	</div>
-	
+<!--Выпадающее меню-->	
     <div class="categories">
-			<ul class="categories_menu"> 
-					<ul class="menu">
-						<li><a href="#">ВСЕ КАТЕГОРИИ +</a>
-							<ul class="submenu">
-								<li><a href=#>Подменю 1</a></li>
-								<li><a href=#>Подменю 2</a></li>
-								<li><a href=#>Подменю 3</a></li>
-							</ul>
-					</li>
-					</ul>
+		<ul class="categories_menu"> 
+				<ul class="menu">
+					<li><a href="#">ВСЕ КАТЕГОРИИ +</a>
+						<ul class="submenu">
+							<li><a href=#>Подменю 1</a></li>
+							<li><a href=#>Подменю 2</a></li>
+							<li><a href=#>Подменю 3</a></li>
+						</ul>
+				    </li>
+				</ul>
 			<li><a href="#" class="shipping">Доставка</a></li>
 			<li><a href="#" class="guarantee">Гарантия</a></li>
 			<li><a href="#" class="contacts">Контакты</a></li>
 		</ul>
     </div>
-	
+<!--Линия с ссылками-->	
 	<div class="way">
 		<ul>
 			<li><a href="#">Главная</a><a href="#">/Каталог</a><a href="#">/Моноблоки и ноутбуки</a></li>
 		</ul>
 	</div>
-	
-	<div class="line"></div>
-	
+<!--Горизонтальная полоса-->	
+	<div class="line">
+	</div>
+<!--Название отдела-->
 	<div class="info"><p><b>Моноблоки и ноутбуки</b></p></div>
+<!--Новый код-->	
+<div class="test">	
+	<div class="new">		
+	<section class="filters">
+		<div class="filters_div">			
+			<h2>ФИЛЬТР</h2>	
+				<form>
+					<fieldset>	
+					<h3>Стоимость</h3>						
+						<p><input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5</span></p>
+					</fieldset>
+					<fieldset>
+					<h3>Призводительность</h3>
+						<input type="checkbox" checked/>Lenovo 
+						<input type="checkbox" checked/> Philips
+					<br>
+						<input type="checkbox" checked/> Acer
+						<input type="checkbox"/>HP
+					</fieldset>
+					<fieldset>
+					<h3>Видеокарта</h3>
+						<input type="radio" name="group1" value="Milk"> NVidia<br>
+						<input type="radio" name="group1" value="Butter" checked> AMD<br>
+						<input type="radio" name="group1" value="Cheese"> Встроенная
+					</fieldset>
+					<fieldset>
+						<button>Приенить</button>
+						<p>Сбросить фильтр</p>
+					</fieldset>
+				</form>
+        </div>
+	</section>
+	<section class="catalog">
+		<div class="home">
+			<span>В наличии</span>
+			<img src="image\catalog\1.png">
+			<p>Ноутбук ACER</p>
+			<h1>11020 руб.</h1>
+			<button>В корзину</button>
+		</div>
+		<div class="home">
+			<span>В наличии</span>
+			<img src="image\catalog\2.png">
+			<p>Ноутбук Apple</p>
+			<h1>11020 руб.</h1>
+			<button>В корзину</button>
+		</div>
+		<div class="home">
+			<span>В наличии</span>
+			<img src="image\catalog\3.png">
+			<p>Ноутбук HP Pavillion</p>
+			<h1>11020 руб.</h1>
+			<button>В корзину</button>
+		</div>
+		<div class="home">
+			<span>В наличии</span>
+			<img src="image\catalog\4.png">
+			<p>Ноутбук HP Pavillion 6</p>
+			<h1>11020 руб.</h1>
+			<button>В корзину</button>
+		</div>
+	</section>
+	</div>
+</div>
+<!--Конец нового кода-->
+<!--Сортировка-->	
+<!-- 			
+	<div class="sorting">	
+		<ul class="sorting_menu">
+			<ul class="menu_sorting">
+				<li><h2>ФИЛЬТР</h2>	</li>
+					<ul class="submenu_sorting">
+						<form>
+					<fieldset>	
+						<h3>Стоимость</h3>						
+							<p><input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5</span></p>
+					</fieldset>
+					<fieldset>
+						<h3>Призводительность</h3>
+							<input type="checkbox" checked/>Lenovo 
+							<input type="checkbox" checked/> Philips
+								<br>
+							<input type="checkbox" checked/> Acer
+							<input type="checkbox"/>HP
+					</fieldset>
+					<fieldset>
+						<h3>Видеокарта</h3>
+							<input type="radio" name="group1" value="Milk"> NVidia<br>
+							<input type="radio" name="group1" value="Butter" checked> AMD<br>
+							<input type="radio" name="group1" value="Cheese"> Встроенная
+					</fieldset>
+					<fieldset>
+						<button>Приенить</button>
+						<p>Сбросить фильтр</p>
+					</fieldset>
+				</form>
+					</ul>
+			</ul>	
+			<li><h1>Сортировка</h1></li>
+			<li><p>по цене</p></li>
+			<li><p>по типу</p></li>
+			<li><p>по популярности</p></li>
+				<ul class="sorting_menu_arrow">
+					<li><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></li>
+					<li><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></li>
+				</ul>
+		</ul>
+	</div>
+</div>
+-->
+<!--Боковой фильтр-->
+<!--		
         <div class="filters">
-		
 			<fieldset>
 				<h2>ФИЛЬТР</h2>	
 			</fieldset>
-		
-			
-			
-			<form>
-			
-			<fieldset>	
+				<form>
+					<fieldset>	
 						<h3>Стоимость</h3>						
-				<p><input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5</span></p>
-			</fieldset>
-				<fieldset>
+							<p><input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5</span></p>
+					</fieldset>
+					<fieldset>
 						<h3>Призводительность</h3>
-				<input type="checkbox" checked/>Lenovo 
-				<input type="checkbox" checked/> Philips
-			<br>
-				<input type="checkbox" checked/> Acer
-				<input type="checkbox"/>HP
-				</fieldset>
-				<fieldset>
+							<input type="checkbox" checked/>Lenovo 
+							<input type="checkbox" checked/> Philips
+								<br>
+							<input type="checkbox" checked/> Acer
+							<input type="checkbox"/>HP
+					</fieldset>
+					<fieldset>
 						<h3>Видеокарта</h3>
-				<input type="radio" name="group1" value="Milk"> NVidia<br>
-				<input type="radio" name="group1" value="Butter" checked> AMD<br>
-				<input type="radio" name="group1" value="Cheese"> Встроенная
-				</fieldset>
-				<fieldset>
-					<button>Приенить</button>
-					<p>Сбросить фильтр</p>
-				</fieldset>
-							
-			</form>
-            </div>
-			
+							<input type="radio" name="group1" value="Milk"> NVidia<br>
+							<input type="radio" name="group1" value="Butter" checked> AMD<br>
+							<input type="radio" name="group1" value="Cheese"> Встроенная
+					</fieldset>
+					<fieldset>
+						<button>Приенить</button>
+						<p>Сбросить фильтр</p>
+					</fieldset>
+				</form>
+        </div>
+-->
+<!-- Ноутбуки -->
+<!--				
      <div class="home">
-
+		<div class="home_Acer">
+			<img src="image\catalog\1.jpg">
+			<p>Ноутбук ACER</p>
+			<h1>11020 руб.</h1>
+			<button>В корзину</button>
+		</div>
+		<div class="home_Apple">
+			<img src="image\catalog\2.jpg">
+			<p>Ноутбук Apple</p>
+			<h1>11020 руб.</h1>
+			<button>В корзину</button>
+		</div>
+		<div class="home_HP">
+			<img src="image\catalog\3.jpg">
+			<p>Ноутбук HP Pavillion</p>
+			<h1>11020 руб.</h1>
+			<button>В корзину</button>
+		</div>
+		<div class="home_HP6">
+			<img src="image\catalog\4.jpg">
+			<p>Ноутбук HP Pavillion 6</p>
+			<h1>11020 руб.</h1>
+			<button>В корзину</button>
+		</div>
+		
+		<button>Влево</button>
+		<button>Вправо</button>
      </div>
-    <div class="maps">
-
-    </div>
-<div class="bottom">
-
-</div>
+-->
+<!-- -------------------------------------------------- -->
+				<!--На все страницы внизу-->
+<!-- -------------------------------------------------- -->
+<!-- Контактная информация -->
+<footer>	 
+	<div class="contact_info">
+		
+			<ul class="contact_link">
+				<li><h1>MAGNO</h1>	</li>	
+				<li><a href="#" class="shipping">Доставка</a></li>
+				<li><a href="#" class="guarantee">Гарантия</a></li>
+				<li><a href="#" class="contacts">Контакты</a></li>
+			</ul>			
+			<ul class="contact_map">
+				<h3>г. МОСКВА, ул. СТРОИТЕЛЕЙ, 15<br>			
+					к 1 офис 456</h3>
+				<li>8-800-5000-616</li>
+				<li><img src="image\catalog\map.jpg"></li>
+			</ul>
+			<ul class="contact_link_info">
+				<a href="#"><i class="fa fa-user"></i>Личный кабинет</a>
+				<a href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
+			</ul>
+    </div>    
+<!-- Низ страницы-->
+	<div class="bottom">
+		<p>Все права защищены 2017</p>
+			<ul class="buttom_icon">
+				<li><i class="fa fa-vk" aria-hidden="true"></i></li>
+				<li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+				<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+				<li></li>
+			</ul>
+	</div>
+</footer>
 </body>
 </html>
