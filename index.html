@@ -1,63 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link href="style/index_style.css" rel="stylesheet" type="text/css">
-    <title>Title</title>
+    <meta charset="UTF-8">	
+		<!--На все страницы в верху и внизу-->
+    <link href="style/catalog_style.css" rel="stylesheet" type="text/css">
+		<!--Главная-->
+	<link href="style/index_style.css" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+   
+   <title>Главная</title>
 </head>
 <body>
-<div class="header">
-    <h1>MANGO</h1>
-    <h3>7 900 000 00 00</h3>
-    <p>Личный кабинет</p>
-    <p>Корзина</p>
-</div>
-    <div class="log_in_form">
-
+<!-- -------------------------------------------------- -->
+				<!--На все страницы в верху-->
+<!-- -------------------------------------------------- -->
+<!--Верх-->
+	<div class="header">
+		<h1>MAGNO</h1>
+		<a href="#" id="phone"><i class="fa fa-phone"></i>+ 7 900 000 00 00</a>
+		<input type="search" placeholder="Поиск"><i class="fa fa-search"></i>
+		<a href="#"><i class="fa fa-user"></i>Авторизация</a>
+		<a href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
+	</div>
+<!--Выпадающее меню-->	
+    <div class="categories">
+		<ul class="categories_menu"> 
+				<ul class="menu">
+					<li><a href="#">ВСЕ КАТЕГОРИИ +</a>
+						<ul class="submenu">
+							<li><a href=#>Подменю 1</a></li>
+							<li><a href=#>Подменю 2</a></li>
+							<li><a href=#>Подменю 3</a></li>
+						</ul>
+				    </li>
+				</ul>
+			<li><a href="#" class="shipping">Доставка</a></li>
+			<li><a href="#" class="guarantee">Гарантия</a></li>
+			<li><a href="#" class="contacts">Контакты</a></li>
+		</ul>
     </div>
-        <div class="menu">
-            ВСЕ КАТЕГОРИИ
-            <ul>
-                <li>Доставка</li>
-                <li>Гарантия</li>
-                <li>Контакты</li>
+<!-- -------------------------------------------------- -->
+						<!--Конец-->
+<!-- -------------------------------------------------- -->
+<!--Слайдер-->	
+	<div class="slider">
+		<h2>НОУТБУКИ<br>
+			ДЛЯ ОФИСА И ДОМА
+		</h2>
+		<p> text text text text text text text text<br>
+			text texttext texttext texttext text<p>
+			<button>ПОДРОБНЕЕ</button>	
+		<img src="image\index\1.png">			
+	</div>
+<!--Горизонтальная полоса-->	
+	<div class="line">
+	</div>
+<!--Продукты-->	
+	<div class="product">
+		<section class="product_catalog">
+			<div class="choice_product">
+				<h3>МОНОБЛОКИ И НОУТБУКИ</h3>
+			</div>
+			<div class="choice_product">
+				<h3>ПЕРЕФЕРИЯ</h3>				
+			</div>
+			<div class="choice_product">
+				<h3>КОМПЛЕКТУЮЩИЕ</h3>
+			</div>
+			<div class="choice_product">
+				<h3>РОУТЕРЫ</h3>				
+			</div>
+			<div class="choice_product">
+				<h3>НАСТОЛЬНЫЕ ЛАМПЫ</h3>
+			</div>
+			<div class="choice_product">
+				<h3>ИГРОВЫЕ СИМУЛЯТОРЫ</h3>				
+			</div>
+		</section>
+	</div>	
+<!--Горизонтальная полоса-->	
+	<div class="line">
+	</div>
+<!--Гарантия-->	
+	<div class="garant">
+		<button>ДОСТАВКА</button>
+		<button>ГАРАНТИЯ</button>
+		<button>КРЕДИТ</button>
+		<h1>Гарантия</h1>
+		<img src="image\index\2.png">
+	</div>
+<!--Горизонтальная полоса-->	
+	<div class="line">
+	</div>
+<!--Логотипы-->	
+	<div class="logo">
+		<div class="logo_icon">	
+			<img src="image\index\3.png">
+		</div>
+		<div class="logo_icon">	
+			<img src="image\index\4.png">
+		</div>
+		<div class="logo_icon">	
+			<img src="image\index\5.png">
+		</div>
+		<div class="logo_icon">	
+			<img src="image\index\6.png">
+		</div>
+		<div class="logo_icon">	
+			<img src="image\index\7.png">
+		</div>
+		<div class="logo_icon">	
+			<img src="image\index\8.png">
+		</div>
+		<div class="logo_icon">	
+			<img src="image\index\9.png">
+		</div>
+		<div class="logo_icon">	
+			<img src="image\index\10.png">
+		</div>
+	</div>
+<!--Компания-->
+<!--Почтовая рассылка-->
+<!-- -------------------------------------------------- -->
+				<!--На все страницы внизу-->
+<!-- -------------------------------------------------- -->
 
-            </ul>
+<!-- Контактная информация -->
+<footer>	 
+	<div class="contact_info">		
+			<ul class="contact_link">
+				<li><h1>MAGNO</h1>	</li>	
+				<li><a href="#" class="shipping">Доставка</a></li>
+				<li><a href="#" class="guarantee">Гарантия</a></li>
+				<li><a href="#" class="contacts">Контакты</a></li>
+			</ul>			
+			<ul class="contact_map">
+				<h3>г. МОСКВА, ул. СТРОИТЕЛЕЙ, 15<br>			
+					к 1 офис 456</h3>
+				<li>8-800-5000-616</li>
+				<li><img src="image\catalog\map.jpg"></li>
+			</ul>
+			<ul class="contact_link_info">
+				<a href="#"><i class="fa fa-user"></i>Личный кабинет</a>
+				<a href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
+			</ul>
+    </div> 
+<!--Низ страницы-->
+	<div class="bottom">
+		<p>Все права защищены 2017</p>
+			<ul class="buttom_icon">
+				<li><i class="fa fa-vk" aria-hidden="true"></i></li>
+				<li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+				<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+				<li></li>
+			</ul>
+	</div>
+</footer>	
 
-        </div>
-            <div class="slaider">
-
-            </div>
-                <div class="products">
-                        <div class="products_one">
-                            <p>ejfgnsgiesdgnoli</p>
-                        </div>
-                    <div class="products_two"></div>
-                    <div class="products_three"></div>
-                    <div class="products_four"></div>
-                    <div class="products_five"></div>
-                    <div class="products_six"></div>
-                </div>
-            <div class="guarantee">
-
-            </div>
-            <div class="brands">
-
-            </div>
-                <div class="company">
-
-                </div>
-            <div class="mailing">
-
-            </div>
-        <div class="mailing">
-
-        </div>
-    <div class="contracts">
-
-    </div>
-<div class="bottom">
-
-</div>
 </body>
 </html>

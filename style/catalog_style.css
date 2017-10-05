@@ -12,31 +12,22 @@ body{
 	padding:0;
 	overflow-x:hidden;
 }
-button
-{
-	border:none;
-	width:252px;
-	height:32px;
-	background:#e9b637;	
-}
-button:hover
-{
-	background:none;
-	
+button:hover{
+	background:none;	
 }
 /*Верх*/
 .header{
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
-	background:#3c3c3c;	
+	background:#3c3c3c;		
 }
 .header h1{
 	color:#fff;
 }
 .header a{
 	color:#fff;
-	text-decoration:none;
+	text-decoration:none;	
 }
 #phone{
 	color:#e9b637;
@@ -56,22 +47,17 @@ input[type="search"]::-webkit-input-placeholder{
 	color:#989898;
 }
 /* Выпадающее меню начало*/
-.menu ul {
+.menu ul{
     display: block;
     margin: 0;
     padding: 0;
-    list-style: none;
-	
-		
+    list-style: none;		
 }
-
-ul.menu > li {
+ul.menu > li{
     float: left;
-    position: relative;
-	
-	
+    position: relative;	
 }
-ul.menu > li > a {
+ul.menu > li > a{
     display: block;
     padding: 10px;
     color: black;
@@ -79,7 +65,7 @@ ul.menu > li > a {
     text-decoration: none;
 }
 
-ul.submenu {
+ul.submenu{
     display: none;
     position: absolute;
     top: 70px;
@@ -87,26 +73,26 @@ ul.submenu {
 	background-color: #f0f0f0;   
     border: 1px solid #f0f0f0;
 }
-ul.submenu > li {
+ul.submenu > li{
     display: block;
 }
-ul.submenu > li > a {
+ul.submenu > li > a{
     display: block;
 	width: 120px;	
     padding: 10px;
     color: #606060;   
     text-decoration: none;
 }
-ul.submenu > li > a:hover {
+ul.submenu > li > a:hover{
     text-decoration: underline;
 }
-ul.menu > li:hover > ul.submenu {
+ul.menu > li:hover > ul.submenu{
     display: block;
 }
 
-
 .categories{
 	background:#f0f0f0;
+	border: 1px solid transparent;
 }
 .categories_menu{
 	display:flex;
@@ -124,7 +110,7 @@ ul.menu > li:hover > ul.submenu {
 }
 /*Горизонтальная полоса*/
 .line{
-	border-bottom: 2px solid #f0f0f0;
+	border-bottom: 3px solid #f0f0f0;
 	height: 1px;
 	width: 100%;
 }
@@ -134,14 +120,14 @@ ul.menu > li:hover > ul.submenu {
 	font-size: 30px;
 	margin-left: 6%;
 }
-/*Новый код*/
-.new{
+/*Фильтр*/
+.search_filters{
 	width: 1200px;
 	margin:0 auto;
 	display: flex;
 	justify-content:space-around;
 }
-h2{
+.search_filters h2{
 	background: grey;
 	padding: 10px;
 	margin-bottom: 0;
@@ -149,7 +135,7 @@ h2{
 .filters form{
 	margin-top: 0;
 }
-.test::before{			
+.search::before{			
 	content: "";
 	background-image: linear-gradient(#f0f0f0 8%, #fff 4%, #fff 100%) ;
 	position: absolute;
@@ -159,25 +145,20 @@ h2{
 	height: 100%;
 	z-index: -1;
 }	
-.test{
+.search{
 	position: relative;
 }
-.filters
-{
-	display:flex;
-	
+.filters{
+	display:flex;	
 }
-/*Ноутбуки*/
-.catalog
-{
+/*Каталог товаров*/
+.catalog{
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
-	width:800px;
-	
+	width:800px;	
 }
-.home
-{
+.catalog_div{
 	border:1px solid #333;
 	margin:20px;
 	display:flex;
@@ -188,8 +169,7 @@ h2{
 	width:360px;
 	position:relative;
 }
-.home span
-{
+.catalog_div span{
 	background:#709f39;
 	color:#fff;
 	padding:10px;
@@ -197,42 +177,12 @@ h2{
 	top:0;
 	right:0;
 }
-/*Конец нового кода*/
-/*Сортировка*/
-/*
-.sorting{	
-	background: #f0f0f0;
+.catalog_div button{
+	border:none;
+	width:252px;
+	height:32px;
+	background:#e9b637;	
 }
-.sorting_menu{
-	display:flex;
-	justify-content:flex-end;
-	align-items: center;
-}
-.sorting_menu li{
-	padding-left: 80px;
-}
-.sorting_menu_arrow{
-	margin-right: 120px;
-}
-*/
-/*Боковой фильтр*/
-/*
-.menu_sorting{
-	
-}
-.submenu_sorting{
-	
-}
-.filters fieldset{
-	background: #606060;
-	border-top: 0px;
-	border-left: 0px;
-	border-right: 0px;
-	border:	solid 1px #3c3c3c;
-	width: 360px;
-	margin-left: 80px;	
-}
-*/
 /*------------------------------------------------------*/
 				/*На все страницы внизу*/
 /*------------------------------------------------------*/
@@ -243,15 +193,21 @@ h2{
 .contact_info{
 	background: #464646;
 	color: white;
+	border: 1px solid transparent;
 }
 .contact_info>h1{
 	font-size: 50px;	
 }
-.contact_link {
+.contact_link{
 	font-size: 20px;
 	display: flex;
 	justify-content: space-around;
-	align-items:flex-end;		
+	line-height:20px;
+	align-items: center;	
+}
+.contact_link li:first-child{
+	width: 610px;
+	padding-left: 50px;
 }
 .contact_map h3{
 	font-size: 14px;	
@@ -261,8 +217,7 @@ h2{
 }
 .contact_map{
 	display: flex;
-	justify-content: space-around;		
-	
+	justify-content: space-around;	
 	margin-left:2%;	
 	width:100%;	
 }

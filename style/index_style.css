@@ -1,60 +1,59 @@
-/* Index */
-.header >h1
-{
-    color: white;
-    background: #3c3c3c;
+/*Слайдер*/
+.slider{
+	width:90%;
+	background:#e9b637;	
+	width:1000px;
+	height:300px;
+	margin-left:15%;
+	margin-top:1%;
+	margin-bottom:2%;	
 }
-.header >h3
-{
-    color: #e9b637;
+.slider button{
+	border: 2px solid white;
+	color: white;
+	width:252px;
+	height:32px;
+	background:#e9b637;	
 }
-.header >p
-{
-    color: white;
+.slider img{
+	margin-left:50%;
+	margin-top:-15%;	
 }
-.header
-{
-    background: #3c3c3c;
+/*Продукты*/
+.product{	
+	margin-top:1%;
 }
-.products_one > p
-{
-    border: 5px solid orange;
-    border-radius:50%;
-    height: 150px;
-    width: 150px;
+.product_catalog{	
+	align-items:center;
+	justify-content:space-around;
+	display:flex;
+	position:relative;
 }
-.products_two > p
-{
-    border: 5px solid orange;
-    border-radius:50%;
-    height: 150px;
-    width: 150px;
+.choice_product{
+	background: #f0f0f0;
+	width:15%;
+	width:180px;
+	height:180px;
+	border-radius: 100px;
+	border: 3px solid #e9b637;
 }
-.products_three > p
-{
-    border: 5px solid orange;
-    border-radius:50%;
-    height: 150px;
-    width: 150px;
+/*Гарантия*/
+.garant button{
+	border: 2px solid black;
+	color: black;
+	width:252px;
+	height:32px;
+	background:white;	
 }
-.products_four > p
-{
-    border: 5px solid orange;
-    border-radius:50%;
-    height: 150px;
-    width: 150px;
+/*Логотипы*/
+.logo{	
+	align-items:center;
+	justify-content:space-around;
+	display:flex;	
 }
-.products_five > p
-{
-    border: 5px solid orange;
-    border-radius:50%;
-    height: 150px;
-    width: 150px;
+.logo_icon{		
+	display:flex;
+	justify-content: space-around;
 }
-.products_six > p
-{
-    border: 5px solid orange;
-    border-radius:50%;
-    height: 150px;
-    width: 150px;
-}
+/*Компания*/
+/*Почтовая рассылка*/

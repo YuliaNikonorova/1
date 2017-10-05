@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-	
+    <meta charset="UTF-8">	
     <link href="style/catalog_style.css" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
    
    <title>Каталог</title>
 </head>
 <body>
+<!-- -------------------------------------------------- -->
+				<!--На все страницы в верху-->
+<!-- -------------------------------------------------- -->
 <!--Верх-->
 	<div class="header">
 		<h1>MAGNO</h1>
@@ -34,6 +36,9 @@
 			<li><a href="#" class="contacts">Контакты</a></li>
 		</ul>
     </div>
+<!-- -------------------------------------------------- -->
+						<!--Конец-->
+<!-- -------------------------------------------------- -->
 <!--Линия с ссылками-->	
 	<div class="way">
 		<ul>
@@ -45,9 +50,9 @@
 	</div>
 <!--Название отдела-->
 	<div class="info"><p><b>Моноблоки и ноутбуки</b></p></div>
-<!--Новый код-->	
-<div class="test">	
-	<div class="new">		
+<!--Фильтр-->	
+<div class="search">	
+	<div class="search_filters">		
 	<section class="filters">
 		<div class="filters_div">			
 			<h2>ФИЛЬТР</h2>	
@@ -77,29 +82,30 @@
 				</form>
         </div>
 	</section>
+<!--Каталог товаров-->
 	<section class="catalog">
-		<div class="home">
+		<div class="catalog_div">
 			<span>В наличии</span>
 			<img src="image\catalog\1.png">
 			<p>Ноутбук ACER</p>
 			<h1>11020 руб.</h1>
 			<button>В корзину</button>
 		</div>
-		<div class="home">
+		<div class="catalog_div">
 			<span>В наличии</span>
 			<img src="image\catalog\2.png">
 			<p>Ноутбук Apple</p>
 			<h1>11020 руб.</h1>
 			<button>В корзину</button>
 		</div>
-		<div class="home">
+		<div class="catalog_div">
 			<span>В наличии</span>
 			<img src="image\catalog\3.png">
 			<p>Ноутбук HP Pavillion</p>
 			<h1>11020 руб.</h1>
 			<button>В корзину</button>
 		</div>
-		<div class="home">
+		<div class="catalog_div">
 			<span>В наличии</span>
 			<img src="image\catalog\4.png">
 			<p>Ноутбук HP Pavillion 6</p>
@@ -109,116 +115,6 @@
 	</section>
 	</div>
 </div>
-<!--Конец нового кода-->
-<!--Сортировка-->	
-<!-- 			
-	<div class="sorting">	
-		<ul class="sorting_menu">
-			<ul class="menu_sorting">
-				<li><h2>ФИЛЬТР</h2>	</li>
-					<ul class="submenu_sorting">
-						<form>
-					<fieldset>	
-						<h3>Стоимость</h3>						
-							<p><input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5</span></p>
-					</fieldset>
-					<fieldset>
-						<h3>Призводительность</h3>
-							<input type="checkbox" checked/>Lenovo 
-							<input type="checkbox" checked/> Philips
-								<br>
-							<input type="checkbox" checked/> Acer
-							<input type="checkbox"/>HP
-					</fieldset>
-					<fieldset>
-						<h3>Видеокарта</h3>
-							<input type="radio" name="group1" value="Milk"> NVidia<br>
-							<input type="radio" name="group1" value="Butter" checked> AMD<br>
-							<input type="radio" name="group1" value="Cheese"> Встроенная
-					</fieldset>
-					<fieldset>
-						<button>Приенить</button>
-						<p>Сбросить фильтр</p>
-					</fieldset>
-				</form>
-					</ul>
-			</ul>	
-			<li><h1>Сортировка</h1></li>
-			<li><p>по цене</p></li>
-			<li><p>по типу</p></li>
-			<li><p>по популярности</p></li>
-				<ul class="sorting_menu_arrow">
-					<li><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></li>
-					<li><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></li>
-				</ul>
-		</ul>
-	</div>
-</div>
--->
-<!--Боковой фильтр-->
-<!--		
-        <div class="filters">
-			<fieldset>
-				<h2>ФИЛЬТР</h2>	
-			</fieldset>
-				<form>
-					<fieldset>	
-						<h3>Стоимость</h3>						
-							<p><input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5</span></p>
-					</fieldset>
-					<fieldset>
-						<h3>Призводительность</h3>
-							<input type="checkbox" checked/>Lenovo 
-							<input type="checkbox" checked/> Philips
-								<br>
-							<input type="checkbox" checked/> Acer
-							<input type="checkbox"/>HP
-					</fieldset>
-					<fieldset>
-						<h3>Видеокарта</h3>
-							<input type="radio" name="group1" value="Milk"> NVidia<br>
-							<input type="radio" name="group1" value="Butter" checked> AMD<br>
-							<input type="radio" name="group1" value="Cheese"> Встроенная
-					</fieldset>
-					<fieldset>
-						<button>Приенить</button>
-						<p>Сбросить фильтр</p>
-					</fieldset>
-				</form>
-        </div>
--->
-<!-- Ноутбуки -->
-<!--				
-     <div class="home">
-		<div class="home_Acer">
-			<img src="image\catalog\1.jpg">
-			<p>Ноутбук ACER</p>
-			<h1>11020 руб.</h1>
-			<button>В корзину</button>
-		</div>
-		<div class="home_Apple">
-			<img src="image\catalog\2.jpg">
-			<p>Ноутбук Apple</p>
-			<h1>11020 руб.</h1>
-			<button>В корзину</button>
-		</div>
-		<div class="home_HP">
-			<img src="image\catalog\3.jpg">
-			<p>Ноутбук HP Pavillion</p>
-			<h1>11020 руб.</h1>
-			<button>В корзину</button>
-		</div>
-		<div class="home_HP6">
-			<img src="image\catalog\4.jpg">
-			<p>Ноутбук HP Pavillion 6</p>
-			<h1>11020 руб.</h1>
-			<button>В корзину</button>
-		</div>
-		
-		<button>Влево</button>
-		<button>Вправо</button>
-     </div>
--->
 <!-- -------------------------------------------------- -->
 				<!--На все страницы внизу-->
 <!-- -------------------------------------------------- -->
