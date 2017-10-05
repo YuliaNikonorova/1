@@ -63,8 +63,8 @@ ul.menu > li > a{
     color: black;
     background-color: #f0f0f0;
     text-decoration: none;
+	width: 200px;
 }
-
 ul.submenu{
     display: none;
     position: absolute;
@@ -75,11 +75,12 @@ ul.submenu{
 }
 ul.submenu > li{
     display: block;
+	height: 10px;
+	width: 450px;
 }
 ul.submenu > li > a{
-    display: block;
-	width: 120px;	
-    padding: 10px;
+    display: block;		
+    padding: 8px;
     color: #606060;   
     text-decoration: none;
 }
@@ -89,10 +90,10 @@ ul.submenu > li > a:hover{
 ul.menu > li:hover > ul.submenu{
     display: block;
 }
-
 .categories{
 	background:#f0f0f0;
 	border: 1px solid transparent;
+	height: 70px;
 }
 .categories_menu{
 	display:flex;
