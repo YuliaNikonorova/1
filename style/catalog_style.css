@@ -47,11 +47,13 @@ input[type="search"]::-webkit-input-placeholder{
 	color:#989898;
 }
 /* Выпадающее меню начало*/
+/*
 .menu ul{
     display: block;
     margin: 0;
     padding: 0;
-    list-style: none;		
+    list-style: none;	
+	z-index: 1;
 }
 ul.menu > li{
     float: left;
@@ -89,20 +91,38 @@ ul.submenu > li > a:hover{
 }
 ul.menu > li:hover > ul.submenu{
     display: block;
+	
 }
+
+*/
 .categories{
 	background:#f0f0f0;
 	border: 1px solid transparent;
 	height: 70px;
+	margin:0 auto;
 }
 .categories_menu{
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
+	list-style:none;
 }
-.categories_menu li:first-child{
-	width:50%;
+.menu li > ul
+{
+	display:none;
 }
+.menu li:hover > ul 
+{
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+	position:absolute;
+	z-index:1;
+	background:#f0f0f0;
+	width:1200px;
+	
+}
+
 /* Выпадающее меню конец*/
 /*Линия с ссылками*/
 .way{
@@ -152,6 +172,61 @@ ul.menu > li:hover > ul.submenu{
 .filters{
 	display:flex;	
 }
+.filters_div button{
+	border:none;
+	width:252px;
+	height:32px;
+	background:#e9b637;
+	outline: none;
+}
+.filters_div button:hover{
+	background: none;	
+	border: 1px solid #e9b637;
+	color: #e9b637;
+}
+.filters_div button:active{
+	background: none;	
+	border: 1px solid #e9b637;
+	color: #e9b637;
+	opacity:0.5;
+}
+/*Сортировка*/
+
+.catalog ul{
+	display: flex;
+}
+.sorting li:first-child
+{
+	font-weight:bold;
+	font-size:25px;
+	width:250px;
+}
+.sorting{
+	display:flex;
+	justify-content:space-between;
+	width:700px;
+	align-items:center;
+}
+.sorting a
+{
+	color:#c3c3c3;
+	text-transform:uppercase;
+	font-size:14px;
+}
+.sorting a:hover
+{
+	color:#333;
+}
+.sorting a:active
+{
+	opacity:0.5;
+}
+.catalog-head
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
 /*Каталог товаров*/
 .catalog{
 	display:flex;
@@ -182,7 +257,19 @@ ul.menu > li:hover > ul.submenu{
 	border:none;
 	width:252px;
 	height:32px;
-	background:#e9b637;	
+	background:#e9b637;
+	outline: none;
+}
+.catalog_div button:hover{
+	background: none;	
+	border: 1px solid #e9b637;
+	color: #e9b637;
+}
+.catalog_div button:active{
+	background: none;	
+	border: 1px solid #e9b637;
+	color: #e9b637;
+	opacity:0.5;
 }
 /*------------------------------------------------------*/
 				/*На все страницы внизу*/

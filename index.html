@@ -7,7 +7,10 @@
 		<!--Главная-->
 	<link href="style/index_style.css" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-   
+   <!--Слайдер2-->	
+   <link rel="stylesheet" href="css/gallery.theme.css">
+<link rel="stylesheet" href="css/gallery.min.css">
+<!--Слайдер2-->	
    <title>Главная</title>
 </head>
 <body>
@@ -15,88 +18,121 @@
 				<!--На все страницы в верху-->
 <!-- -------------------------------------------------- -->
 <!--Верх-->
-	<div class="header">
-		<h1>MAGNO</h1>
-		<a href="#" id="phone"><i class="fa fa-phone"></i>+ 7 900 000 00 00</a>
-		<input type="search" placeholder="Поиск"><i class="fa fa-search"></i>
-		<a href="#"><i class="fa fa-user"></i>Авторизация</a>
-		<a href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
-	</div>
+<div class="header">
+	<h1>MAGNO</h1>
+	<a href="#" id="phone"><i class="fa fa-phone"></i>+ 7 900 000 00 00</a>
+	<input type="search" placeholder="Поиск"><i class="fa fa-search"></i>
+	<a href="#"><i class="fa fa-user"></i>Авторизация</a>
+	<a href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
+</div>
 <!--Выпадающее меню-->	
-    <div class="categories">
-		<ul class="categories_menu"> 
-				<ul class="menu">
-					<li><a href="#">ВСЕ КАТЕГОРИИ +</a>
-						<ul class="submenu">
-							<li><a href=#>Роутеры</a></li>
-							<li><a href=#>Игровые симуляторы</a></li>
-							<li><a href=#>Комплектующие</a></li>
-							<li><a href=#>Переферия</a></li>
-							<li><a href=#>Настольные лампы</a></li>
-							<li><a href=#>Моноблоки и ноутбуки</a></li>
-						</ul>
-				    </li>
-				</ul>
-			<li><a href="#" class="shipping">Доставка</a></li>
-			<li><a href="#" class="guarantee">Гарантия</a></li>
-			<li><a href="#" class="contacts">Контакты</a></li>
-		</ul>
-    </div>
+<div class="categories">
+	<ul class="categories_menu"> 
+			<ul class="menu">
+				<li><a href="#">ВСЕ КАТЕГОРИИ +</a>
+					<ul class="submenu">
+						<li><a href=#>Роутеры</a></li>
+						<li><a href=#>Игровые симуляторы</a></li>
+						<li><a href=#>Комплектующие</a></li>
+						<li><a href=#>Переферия</a></li>
+						<li><a href=#>Настольные лампы</a></li>
+						<li><a href=#>Моноблоки и ноутбуки</a></li>
+					</ul>
+				</li>
+			</ul>
+		<li><a href="#" class="shipping">Доставка</a></li>
+		<li><a href="#" class="guarantee">Гарантия</a></li>
+		<li><a href="#" class="contacts">Контакты</a></li>
+	</ul>
+</div>
 <!-- -------------------------------------------------- -->
 						<!--Конец-->
 <!-- -------------------------------------------------- -->
 <!--Слайдер-->	
-	<div class="slider">	
-		<h2>НОУТБУКИ<br>
-			ДЛЯ ОФИСА И ДОМА
-		</h2>
-		<p> text text text text text text text text<br>
-			text texttext texttext texttext text<p>
-			<button>ПОДРОБНЕЕ</button>	
-		<img src="image\index\1.png">			
-	</div>
+ <div class="slider wrapper">
+    <input type="radio" name="slide" id="slide_1" checked="checked">
+    <label for="slide_1"></label>
+        <div class="slider_content">
+            <div class="slider_discription">
+                <h3>НОУТБУКИ<br>
+                    ДЛЯ ОФИСА И ДОМА</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dicta distinctio eos eum impedit inventore obcaecati officiis possimus quisquam suscipit!</p>
+                <button>Подробнее</button>
+            </div>
+        <img src="image/index/laptop.png" alt="нуотбук">
+        </div> 
+    <input type="radio" name="slide" id="slide_2">
+    <label for="slide_2"></label>
+        <div class="slider_content">
+            <div class="slider_discription">
+                <h3>ВСЯ ПЕРЕФЕРИЯ<br>
+                    ПО САМЫМ НИЗКИМ ЦЕНАМ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dicta distinctio eos eum impedit inventore obcaecati officiis possimus quisquam suscipit!</p>
+                 <button>Подробнее</button>
+            </div>
+        <img src="image/index/printer.png" alt="нуотбук">
+        </div> 
+    <input type="radio" name="slide" id="slide_3">
+    <label for="slide_3"></label>
+        <div class="slider_content">
+			<div class="slider_discription">
+                <h3>ТОЛЬКО ЭТОЙ ОСЕНЬЮ<br>
+                     СКИДКА НА НОУТБУКИ <span class="white">30%</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dicta distinctio eos eum impedit inventore obcaecati officiis possimus quisquam suscipit!</p>
+                <button>Подробнее</button>
+			</div>
+        <img src="image/index/laptop-2.png" alt="нуотбук">
+        </div>        
+</div>
 <!--Горизонтальная полоса-->	
-	<div class="line">
-	</div>
+<div class="line">
+</div>
 <!--Продукты-->	
-	<div class="product">
-		<section class="product_catalog">
-			<section>
+<div class="product">
+	<ul class="product_catalog">			
+		<li>
 				<div class="choice_product">
-					<h3>МОНОБЛОКИ И НОУТБУКИ</h3>
+				<img src="image/index/computers.png">			
 				</div>
-			</section>
-			<section>
+			<h3>МОНОБЛОКИ И НОУТБУКИ</h3>
+		</li>
+		<li>			
 				<div class="choice_product">
-					<h3>ПЕРЕФЕРИЯ</h3>				
+				<img src="image/index/computers.png">						
 				</div>
-			</section>
-			<section>
+			<h3>ПЕРЕФЕРИЯ</h3>	
+		</li>
+		<li>
 				<div class="choice_product">
-					<h3>КОМПЛЕКТУЮЩИЕ</h3>
+				<img src="image/index/computers.png">
 				</div>
-			</section>
-			<section>
+			<h3>КОМПЛЕКТУЮЩИЕ</h3>
+		</li>
+		<li>
 				<div class="choice_product">
-					<h3>РОУТЕРЫ</h3>				
+				<img src="image/index/computers.png">
 				</div>
-			</section>
-			<section>
+			<h3>РОУТЕРЫ</h3>	
+		</li>
+		<li>
 				<div class="choice_product">
-					<h3>НАСТОЛЬНЫЕ ЛАМПЫ</h3>
+				<img src="image/index/computers.png">
 				</div>
-			</section>
-			<section>
+			<h3>НАСТОЛЬНЫЕ ЛАМПЫ</h3>
+		</li>
+		<li>
 				<div class="choice_product">
-					<h3>ИГРОВЫЕ СИМУЛЯТОРЫ</h3>				
+				<img src="image/index/computers.png">
 				</div>
-			</section>
-		</section>
-	</div>	
+			<h3>ИГРОВЫЕ СИМУЛЯТОРЫ</h3>	
+		</li>			
+	</ul>	
+</div>	
 <!--Горизонтальная полоса-->	
-	<div class="line">
-	</div>
+<div class="line">
+</div>
 <!--Гарантия-->	
+<!--
 <div class="garant">
 	<section>
 		<button>ДОСТАВКА</button>
@@ -116,37 +152,79 @@
 	<section>
 		<img src="image\index\2.png">	
 	</section>
+-->
+<!--Гарантия-->	
+	<div class="guarant-box"> 
+        <div class="guarantee wrapper">
+            <div class="guarantee_controls">
+                <label for="delivery">Доставка</label>
+                <label for="guarant">Гарантия</label>
+                <label for="credit">Кредит</label>
+            </div>
+            <div class="guarantee_slides">
+
+                <input type="radio" name="button" id="delivery">               
+               <div class="guarantee_content">
+                    <div class="guarantee-info">
+                        <span>Доставка</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aut veniam quae labore, quidem quam dolores necessitatibus! Sequi facilis eveniet ea nam adipisci qui quos nulla dignissimos sint. Eveniet, perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aut veniam quae labore, quidem quam dolores necessitatibus! Sequi facilis eveniet ea nam adipisci qui quos nulla dignissimos sint. Eveniet, perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aut veniam quae labore, quidem quam dolores necessitatibus! Sequi facilis eveniet ea nam adipisci qui quos nulla dignissimos sint. Eveniet, perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aut veniam quae labore, quidem quam dolores necessitatibus! Sequi facilis eveniet ea nam adipisci qui quos nulla dignissimos sint. Eveniet, perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aut veniam quae labore, quidem quam dolores necessitatibus! Sequi facilis eveniet ea nam adipisci qui quos nulla dignissimos sint. Eveniet, perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aut veniam quae labore, quidem quam dolores necessitatibus! Sequi facilis eveniet ea nam adipisci qui quos nulla dignissimos sint. Eveniet, perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aut veniam quae labore, quidem quam dolores necessitatibus! Sequi facilis eveniet ea nam adipisci qui quos nulla dignissimos sint. Eveniet, perspiciatis.</p>
+                    </div>
+                    <div class="guarantee-img"><img src="image/index/delivery.png" alt=""></div>
+                </div>
+
+               <input type="radio" name="button" id="guarant" checked="checked">
+               <div class="guarantee_content">
+                    <div class="guarantee-info">
+                        <span>Гарантия</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aperiam, atque cum cupiditate dolor enim illo magni nemo, odit, quam quibusdam quod reiciendis repellendus sint suscipit tempora ullam veniam!</p>
+                    </div>
+                    <div class="guarantee-img"><img src="image/index/guarant.png" alt=""></div>
+                </div>
+
+                <input type="radio" name="button" id="credit">
+               <div class="guarantee_content">
+                    <div class="guarantee-info">
+                        <span>Кредит</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aperiam, atque cum cupiditate dolor enim illo magni nemo, odit, quam quibusdam quod reiciendis repellendus sint suscipit tempora ullam veniam!</p>
+					</div>
+                    <div class="guarantee-img"><img src="image/index/credit.png" alt=""></div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
 </div>
 <!--Горизонтальная полоса-->	
-	<div class="line">
-	</div>
+<div class="line">
+</div>
 <!--Логотипы-->	
-	<div class="logo">
-		<div class="logo_icon">	
-			<img src="image\index\3.png">
-		</div>
-		<div class="logo_icon">	
-			<img src="image\index\4.png">
-		</div>
-		<div class="logo_icon">	
-			<img src="image\index\5.png">
-		</div>
-		<div class="logo_icon">	
-			<img src="image\index\6.png">
-		</div>
-		<div class="logo_icon">	
-			<img src="image\index\7.png">
-		</div>
-		<div class="logo_icon">	
-			<img src="image\index\8.png">
-		</div>
-		<div class="logo_icon">	
-			<img src="image\index\9.png">
-		</div>
-		<div class="logo_icon">	
-			<img src="image\index\10.png">
-		</div>
+<div class="logo">
+	<div class="logo_icon">	
+		<img src="image\index\3.png">
 	</div>
+	<div class="logo_icon">	
+		<img src="image\index\4.png">
+	</div>
+	<div class="logo_icon">	
+		<img src="image\index\5.png">
+	</div>
+	<div class="logo_icon">	
+		<img src="image\index\6.png">
+	</div>
+	<div class="logo_icon">	
+		<img src="image\index\7.png">
+	</div>
+	<div class="logo_icon">	
+		<img src="image\index\8.png">
+	</div>
+	<div class="logo_icon">	
+		<img src="image\index\9.png">
+	</div>
+	<div class="logo_icon">	
+		<img src="image\index\10.png">
+	</div>
+</div>
 <!--Компания-->
 <div class="company_pochta">
 	<div class="company">
@@ -160,15 +238,15 @@
 		</p>
 		<ul>
 			<li>
-			• proident, sunt in culpa qui officia deserunt mollit anim id est <br>
+			proident, sunt in culpa qui officia deserunt mollit anim id est <br>
 				laborum. Sed ut perspiciatis unde omnis iste natus error sit 
 			</li>
 			<li>
-			• proident, sunt in culpa qui officia deserunt mollit anim id est <br>
+			proident, sunt in culpa qui officia deserunt mollit anim id est <br>
 				laborum. Sed ut perspiciatis unde omnis iste natus error sit 
 			</li>
 		</ul>
-		<h3><del>НАПИШИТЕ НАМ</del></h3>
+		<h3>НАПИШИТЕ НАМ</h3>
 	</div>
 <!--Почтовая рассылка-->
 	<div class="pochta">
