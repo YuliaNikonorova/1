@@ -8,6 +8,7 @@
 	<link href="style/index_style.css" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 					<title>Главная</title>
+	<script src="js/script.js"></script>
 </head>
 <body>
 <!-- -------------------------------------------------- -->
@@ -18,29 +19,30 @@
 	<h1>MAGNO</h1>
 	<a href="#" id="phone"><i class="fa fa-phone"></i>+ 7 900 000 00 00</a>
 	<input type="search" placeholder="Поиск"><i class="fa fa-search"></i>
-	<a href="#" id="fa-user"><i class="fa fa-user"></i>Авторизация</a>
+		<a href="#" id="fa-user" onclick="entrance()"><i class="fa fa-user"></i>Авторизация</a>
 		<a href="#" id="shopping-cart"><i class="fa fa-shopping-cart"></i>Корзина</a>
 	</div>
 <!--Выпадающее меню-->	
-<div class="categories">
-	<ul class="categories_menu"> 
-			<ul class="menu">
-				<li><a href="#">ВСЕ КАТЕГОРИИ +</a>
-					<ul class="submenu">
-						<li><a href="catalog.html">Роутеры</a></li>
-						<li><a href="catalog.html">Игровые симуляторы</a></li>
-						<li><a href="catalog.html">Комплектующие</a></li>
-						<li><a href="catalog.html">Переферия</a></li>
-						<li><a href="catalog.html">Настольные лампы</a></li>
-						<li><a href="catalog.html">Моноблоки и ноутбуки</a></li>
-					</ul>
-				</li>
-			</ul>
-		<li><a href="#" class="shipping">Доставка</a></li>
-		<li><a href="#" class="guarantee">Гарантия</a></li>
-		<li><a href="#" class="contacts">Контакты</a></li>
-	</ul>
-</div>
+    <div class="categories">
+		<div class="categories_menu"> 
+				<ul class="menu">
+					<li><a href="#">ВСЕ КАТЕГОРИИ +</a>
+						<ul class="submenu">
+							<li><a href=#>Роутеры</a></li>
+							<li><a href=#>Игровые симуляторы</a></li>
+							<li><a href=#>Комплектующие</a></li>
+							<li><a href=#>Переферия</a></li>
+							<li><a href=#>Настольные лампы</a></li>
+							<li><a href=#>Моноблоки и ноутбуки</a></li>
+						</ul>
+				    </li>
+				</ul>
+			<li><a href="#" class="shipping">Доставка</a></li>
+			<li><a href="#" class="guarantee">Гарантия</a></li>
+			<li><a href="#" class="contacts">Контакты</a></li>
+		</ul>
+    </div>
+</div>	
 <!-- -------------------------------------------------- -->
 						<!--Конец-->
 <!-- -------------------------------------------------- -->
@@ -227,7 +229,7 @@
 				laborum. Sed ut perspiciatis unde omnis iste natus error sit 
 			</li>
 		</ul>
-		<a href="#" class="company-msg">НАПИШИТЕ НАМ</a>
+		<a href="#" onclick="entrance_window_pochta()"class="comment_msg"><b>НАПИШИТЕ НАМ</b></a>
 	</div>
 <!--Почтовая рассылка-->
 	<div class="pochta">
@@ -242,6 +244,7 @@
 		</p>
 		<button>Подписаться</button>	
 	</div>
+	
 </div>
 <!-- -------------------------------------------------- -->
 				<!--На все страницы внизу-->
@@ -259,11 +262,11 @@
 			<ul class="contact_map">
 				<h3>г. МОСКВА, ул. СТРОИТЕЛЕЙ, 15<br>			
 					к 1 офис 456</h3>
-				<li>8-800-5000-616</li>
-				<li><img src="image\catalog\map.jpg"></li>
+				<li>8-800-5000-616</li>				
+				<li><a href="#" onclick="entrance_maps_times()"class="maps_times"><img src="image\catalog\map.jpg"> </a></li>
 			</ul>
 			<ul class="contact_link_info">
-				<a href="#" id="fa-user"><i class="fa fa-user"></i>Авторизация</a>
+				<a href="#" id="fa-user" onclick="entrance()"><i class="fa fa-user"></i>Авторизация</a>
 				<a href="#" id="shopping-cart"><i class="fa fa-shopping-cart"></i>Корзина</a>
 			</ul>
     </div> 
@@ -278,6 +281,44 @@
 			</ul>
 	</div>
 </footer>	
-
+<!--Авторизация-->
+<div class="autorisation">
+<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+<p>ВВЕДИТЕ ПОЖАЛУЙСТВА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+	<div class="autorisation_form">
+		<div class="login_parol">
+			<input type="text" placeholder="Логин">
+			<input type="text" placeholder="Пароль">
+		</div>
+			<div class="div_checkbox">
+				<input type="checkbox">ЗАПОМНИТЕ МЕНЯ
+				<p><u><a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a></u></p>
+			</div>				
+		<button>ВОЙТИ</button>
+	</div>	
+	<a href="#" onclick="close_autorisation_times()" class="autorisation_times">&times;</a>		
+</div>
+<!--Почтовая рассылка окно-->
+<div class="window_pochta">
+	<div class="name_pochta">
+		<p><b>Ваше имя:</b></p>
+		<p><b>Ваше e-mail:</b></p>
+	</div>
+	<div class="input_pochta">
+		<input type="text" placeholder="Представьтесь, пожалуйста">
+		<input type="text" placeholder="Для отправки ответа">
+	</div>	
+	<div class="input_comment">
+		<p><b>Текст письма:</b></p>
+		<input type="text" placeholder="В свободной форме">				
+	</div>	
+	<a href="#" class="comment_msg"><b>Отправить</b></a>
+	<a href="#" onclick="close_window_pochta()" class="window_pochta_times">&times; </a>
+</div>
+<!--Всплывающее окно карта-->
+<div class="iframe_maps">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1508272491922" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<a href="#" onclick="close_iframe_maps()" class="iframe_maps_times">&times; </a>
+</div>
 </body>
 </html>

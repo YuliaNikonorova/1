@@ -76,41 +76,40 @@ input[type="search"]::-webkit-input-placeholder{
 .categories{
 	background:#f0f0f0;
 	border: 1px solid transparent;
-	height: 70px;
-	margin:0 auto;	
+	height: 70px;	
 }
 .categories_menu{
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
 	list-style:none;
-	margin:0 auto;
 }
 .menu li > ul{
-	display:none;
+	
+	display: none;
 }
 .menu li:hover > ul{
 	display:flex;
+	align-items:center;
 	justify-content:space-around;
 	list-style:none;
 	position:absolute;
 	z-index:1;
-	background:#f0f0f0;
-	width:1200px;	
+	background:#f0f0f0;	
+	height:100px;
+	margin:0 auto;
 }
 .menu{
 	color: black;
 }
-.submenu a{
-	width:100px;
-}
 .submenu{
-	color: #333;
-	height: 70px;
+	width:1070px;
+	margin:0 auto;
 }
 /*Убрать недочеты при наведении*/
 .submenu li:hover{	
 	color: #e9b637;
+	display: block;
 }
 .categories_menu a:visited{	
 	color: #333;
@@ -156,8 +155,8 @@ input[type="search"]::-webkit-input-placeholder{
 }
 .search_filters h2{
 	background: grey;
-	padding: 10px;
-	margin-bottom: 0;
+	padding: 20px;
+	margin: 0;
 }
 .filters form{
 	margin-top: 0;
@@ -363,4 +362,56 @@ input[type="search"]::-webkit-input-placeholder{
 .buttom_icon li:active{
 	color: #fff;
 	opacity:0.1;
+}
+/*Авторизация*/
+.autorisation{
+	width:400px;
+	height: 420px;
+	margin: 0 auto;
+	padding: 40px;
+	background: #f9f6f3;
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 150px;
+	z-index: 999;
+	box-shadow: 10px 10px 40px #333;
+}
+.div_checkbox{
+	display: flex;
+	align-items: center;	
+}
+.div_checkbox p{	
+	margin-left:30px;
+	width: 120px;
+}
+.login_parol input{
+	color: #333;
+    background: none;    
+    margin: 20px 0;
+    height: 40px;
+    width: 315px;
+	height: 35px;
+	border: 2px solid #333;
+}
+.autorisation button {
+	color: #fff;
+    background: #333;    
+    margin: 20px 0;
+    height: 40px;
+    width: 315px;
+	height: 35px;
+	border:none;
+}
+.autorisation p{
+	font-size: 13px;
+}
+.autorisation_times{
+	font-size: 35px;
+	position: absolute;
+	top: 0;
+	left: 370px;
+	bottom: 0;	
 }

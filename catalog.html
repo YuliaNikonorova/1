@@ -6,6 +6,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	
    <title>Каталог</title>
+   <script src="js/script.js"></script>
 </head>
 <body>
 <!-- -------------------------------------------------- -->
@@ -16,7 +17,7 @@
 		<h1>MAGNO</h1>
 		<a href="#" id="phone"><i class="fa fa-phone"></i>+ 7 900 000 00 00</a>
 		<input type="search" placeholder="Поиск"><i class="fa fa-search"></i>
-		<a href="#" id="fa-user"><i class="fa fa-user"></i>Авторизация</a>
+		<a href="#" id="fa-user" onclick="entrance()"><i class="fa fa-user"></i>Авторизация</a>
 		<a href="#" id="shopping-cart"><i class="fa fa-shopping-cart"></i>Корзина</a>
 	</div>
 <!--Выпадающее меню-->	
@@ -150,7 +151,7 @@
 				<li><img src="image\catalog\map.jpg"></li>
 			</ul>
 			<ul class="contact_link_info">
-				<a href="#" id="fa-user"><i class="fa fa-user"></i>Авторизация</a>
+				<a href="#" id="fa-user" onclick="entrance()"><i class="fa fa-user"></i>Авторизация</a>
 				<a href="#" id="shopping-cart"><i class="fa fa-shopping-cart"></i>Корзина</a>
 			</ul>
     </div>    
@@ -165,5 +166,22 @@
 			</ul>
 	</div>
 </footer>
+<!--Авторизация-->
+<div class="autorisation">
+<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+<p>ВВЕДИТЕ ПОЖАЛУЙСТВА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+	<div class="autorisation_form">
+		<div class="login_parol">
+			<input type="text" placeholder="Логин">
+			<input type="text" placeholder="Пароль">
+		</div>
+			<div class="div_checkbox">
+				<input type="checkbox">  ЗАПОМНИТЕ МЕНЯ
+				<p><u><a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a></u></p>
+			</div>				
+		<button>ВОЙТИ</button>
+	</div>	
+<a href="#" onclick="close_autorisation_times()" class="autorisation_times">&times; </a>		
+</div>
 </body>
 </html>
